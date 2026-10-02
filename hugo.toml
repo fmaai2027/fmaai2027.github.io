@@ -1,0 +1,4 @@
+baseURL = "https://fmaai2027.github.io/"
+languageCode = "en"
+title = "FMAAI 2027"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
