@@ -1,0 +1,17 @@
+<div id="header">
+	<div class="container">
+		<div id="logo">
+			<h1><a href="#">{{ site.Title }}</a></h1>
+			<span>{{ site.Params.edition }}</span>
+			<span>{{ site.Params.venue }}</span>
+		</div>
+		<nav id="nav">
+			<ul>
+				{{- $page := . }}
+				{{- range site.Menus.main }}
+				<li{{ if $page.IsMenuCurrent "main" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+				{{- end }}
+			</ul>
+		</nav>
+	</div>
+</div>

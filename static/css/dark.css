@@ -1,0 +1,102 @@
+/* Dark mode: active when <html data-theme="dark"> (set by /js/theme.js from the saved choice
+   or the OS/browser setting, toggled by the nav button).
+   Selectors are prefixed with "body" so they win over style-desktop.css / style-mobile.css,
+   which skel loads after this file. */
+
+.theme-toggle {
+	padding: 0.4em 1em;
+	border: 1px solid rgba(0, 0, 0, .25);
+	border-radius: 4px;
+	background: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font: inherit;
+	font-size: 0.7em;
+	color: #323338;
+	cursor: pointer;
+}
+
+.theme-toggle:hover {
+	color: #1B6CA8;
+}
+
+#footer-theme {
+	padding: 1.5em 0;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#footer-theme .credit {
+	margin-right: 1em;
+}
+
+#footer-theme .theme-toggle {
+	font-size: 0.9em;
+}
+
+html[data-theme="dark"] body {
+	background: #17181b;
+	color: #d8d8d8;
+}
+
+html[data-theme="dark"] body #page {
+	background: #1f2024;
+}
+
+html[data-theme="dark"] body a {
+	color: #6CB4EE;
+}
+
+html[data-theme="dark"] body strong {
+	color: #f2f2f2;
+}
+
+html[data-theme="dark"] body header h3,
+html[data-theme="dark"] body #content h3 {
+	color: #f2f2f2;
+}
+
+html[data-theme="dark"] body #content h2 {
+	color: #6CB4EE;
+}
+
+html[data-theme="dark"] body #logo h1 a,
+html[data-theme="dark"] body #logo span,
+html[data-theme="dark"] body #nav > ul > li > a,
+html[data-theme="dark"] body #nav > ul > li > span {
+	color: #e6e6e6;
+}
+
+html[data-theme="dark"] body #nav > ul > li > a:hover {
+	color: #6CB4EE;
+}
+
+html[data-theme="dark"] body #nav li.active a {
+	background: #e6e6e6;
+	color: #1f2024;
+}
+
+html[data-theme="dark"] body ul.style3 li {
+	border-top-color: #34363c;
+}
+
+html[data-theme="dark"] body ul.style3 a {
+	color: #c4c4c4;
+}
+
+html[data-theme="dark"] body ul.style3 .date {
+	background: #34363c;
+}
+
+html[data-theme="dark"] body #copyright .container {
+	border-color: rgba(255, 255, 255, .12);
+}
+
+html[data-theme="dark"] .theme-toggle {
+	border-color: rgba(255, 255, 255, .3);
+	color: #e6e6e6;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+	color: #6CB4EE;
+}
